@@ -20,5 +20,7 @@ jobs:
           java-version: '25'
 
       - uses: gradle/actions/setup-gradle@v5
-
       - run: gradle publish
+        env:
+          REPO_USERNAME: ${{ secrets.REPO_USERNAME }}
+          REPO_PASSWORD: ${{ secrets.REPO_PASSWORD }}
