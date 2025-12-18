@@ -17,7 +17,7 @@ dependencies {
 
 gradlePlugin {
     plugins {
-        create("runCytosis") {
+        register("runCytosis") {
             id = "net.cytonic.run-cytosis"
             implementationClass = "net.cytonic.runCytosis.RunCytosisPlugin"
             displayName = "Run Cytosis"
@@ -28,10 +28,6 @@ gradlePlugin {
 
 publishing {
     repositories {
-        maven {
-            name = "local"
-            url = uri(layout.buildDirectory.dir("repo"))
-        }
         maven {
             name = "FoxikleCytonicRepository"
             url = uri("https://repo.foxikle.dev/cytonic")
