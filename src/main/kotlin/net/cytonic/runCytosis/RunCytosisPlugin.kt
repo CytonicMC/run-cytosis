@@ -7,6 +7,7 @@ import org.gradle.api.Project
 class RunCytosisPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         project.tasks.register("runCytosis", RunCytosis::class.java) {
+            group = "run cytosis"
         }
     }
 }
