@@ -42,7 +42,7 @@ abstract class RunCytosis : AbstractRun() {
         displayName.convention("Cytosis")
         cytosisGroup.convention("net.cytonic")
         cytosisArtifact.convention("Cytosis")
-        cytosisClassifier.convention("full")
+        cytosisClassifier.convention("all")
         cytosisMainClass.convention("net.cytonic.cytosis.Cytosis")
 
         javaLauncher.set(javaToolchainService.launcherFor {
